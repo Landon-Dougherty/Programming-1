@@ -1,0 +1,12 @@
+C:\Users\dougherty.l\Desktop\Programming 1\Hello\Hello\bin\Debug\Hello.exe.config
+C:\Users\dougherty.l\Desktop\Programming 1\Hello\Hello\bin\Debug\Hello.exe
+C:\Users\dougherty.l\Desktop\Programming 1\Hello\Hello\bin\Debug\Hello.dll
+C:\Users\dougherty.l\Desktop\Programming 1\Hello\Hello\bin\Debug\IronPython.dll
+C:\Users\dougherty.l\Desktop\Programming 1\Hello\Hello\bin\Debug\IronPython.Modules.dll
+C:\Users\dougherty.l\Desktop\Programming 1\Hello\Hello\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\dougherty.l\Desktop\Programming 1\Hello\Hello\bin\Debug\Microsoft.Scripting.dll
+C:\Users\dougherty.l\Desktop\Programming 1\Hello\Hello\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\dougherty.l\Desktop\Programming 1\Hello\Hello\obj\Debug\Hello.pyprojResolveAssemblyReference.cache
+C:\Users\dougherty.l\Desktop\Programming 1\Hello\Hello\obj\Debug\Hello.MainForm.resources
+C:\Users\dougherty.l\Desktop\Programming 1\Hello\Hello\obj\Debug\Hello.pyproj.GenerateResource.Cache
+C:\Users\dougherty.l\Desktop\Programming 1\Hello\Hello\obj\Debug\Hello.exe
