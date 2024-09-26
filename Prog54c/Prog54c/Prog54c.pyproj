@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{4FD2E6DA-D08B-4DEB-9E73-86C43974233B}</ProjectGuid>
+    <ProjectGuid>{CBCD4003-399D-4ECD-8E69-B821732017D9}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <RootNamespace>Prog54b</RootNamespace>
-    <AssemblyName>Prog54b</AssemblyName>
+    <RootNamespace>Prog54c</RootNamespace>
+    <AssemblyName>Prog54c</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
