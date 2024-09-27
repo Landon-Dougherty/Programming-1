@@ -79,9 +79,9 @@ class MainForm(Form):
         # 
         self._label5.BackColor = System.Drawing.Color.FromArgb(255, 224, 192)
         self._label5.Font = System.Drawing.Font("Microsoft Sans Serif", 25, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
-        self._label5.Location = System.Drawing.Point(134, 233)
+        self._label5.Location = System.Drawing.Point(143, 233)
         self._label5.Name = "label5"
-        self._label5.Size = System.Drawing.Size(154, 109)
+        self._label5.Size = System.Drawing.Size(143, 109)
         self._label5.TabIndex = 5
         self._label5.Text = "A = "
         self._label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -168,7 +168,17 @@ class MainForm(Form):
         Application.Exit()
 
     def Button1Click(self, sender, e):
-        pass
+        radius = float(self._textBox1.Text)
+        P = 3.14159
+        area = round(P * radius**2,3)
+        circum = 2 * P * radius
+        self._label5.Text = str(area)
+        self._label6.Text = str(circum)
+        self._label7.Text = str(radius)
 
     def Button2Click(self, sender, e):
-        pass
+        self._label5.Text = "A ="
+        self._label6.Text = "C ="
+        self._label7.Text = "R ="
+        self._textBox1.Text = "" 
+
