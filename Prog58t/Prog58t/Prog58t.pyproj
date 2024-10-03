@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{C333CD0B-B183-4095-9A14-01E82DAB7114}</ProjectGuid>
+    <ProjectGuid>{AA1B6893-C6B1-4144-A7AF-9862E7531E66}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <RootNamespace>Prog58b</RootNamespace>
-    <AssemblyName>Prog58b</AssemblyName>
+    <RootNamespace>Prog58t</RootNamespace>
+    <AssemblyName>Prog58t</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
