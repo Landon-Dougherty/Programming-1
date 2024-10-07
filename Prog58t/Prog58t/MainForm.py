@@ -60,7 +60,6 @@ class MainForm(Form):
         self._label2.TabIndex = 5
         self._label2.Text = "Total Due"
         self._label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        self._label2.Click += self.Label2Click
         # 
         # button2
         # 
@@ -72,6 +71,7 @@ class MainForm(Form):
         self._button2.TabIndex = 6
         self._button2.Text = "Clear Data"
         self._button2.UseVisualStyleBackColor = False
+        self._button2.Click += self.Button2Click
         # 
         # button3
         # 
@@ -83,6 +83,7 @@ class MainForm(Form):
         self._button3.TabIndex = 7
         self._button3.Text = "Exit"
         self._button3.UseVisualStyleBackColor = False
+        self._button3.Click += self.Button3Click
         # 
         # label3
         # 
@@ -106,7 +107,7 @@ class MainForm(Form):
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.Black
-        self.ClientSize = System.Drawing.Size(586, 458)
+        self.ClientSize = System.Drawing.Size(602, 458)
         self.Controls.Add(self._textBox2)
         self.Controls.Add(self._label3)
         self.Controls.Add(self._button3)
@@ -120,12 +121,25 @@ class MainForm(Form):
         self.ResumeLayout(False)
         self.PerformLayout()
 
-
-    def Label2Click(self, sender, e):
-        pass
-
     def Button1Click(self, sender, e):
         Total  = float(self._textBox1.Text)
         Paid   = float(self._textBox2.Text)
-        Change = float(Total - Paid)
-        self._label.Text = Change
+        Change = float(Paid - Total)
+        QuarterChange = 0
+        
+        if int(Change / 0.25) < 0:
+            QuarterChange = int((Change / 0.25) * -1)
+        else:
+            QuarterChange = int(Change / 0.25)                                    
+        
+        self._label1.Text = "Total = " + str(Total) + "\nPaid = " + str(Paid) + "\nChange = " + str(Total - Paid) +\
+        "\nplaceholder = " + str(QuarterChange)
+        
+    def Button3Click(self, sender, e):
+        Application.Exit()
+
+    def Button2Click(self, sender, e):
+        self._textBox1.Text = ""
+        self._textBox2.Text = ""
+        self._label1.Text   = ""
+        
