@@ -1,0 +1,12 @@
+C:\Users\dougherty.l\Desktop\Programming 1\Prog58t TESTER\Prog58t TESTER\bin\Debug\Prog58t TESTER.exe.config
+C:\Users\dougherty.l\Desktop\Programming 1\Prog58t TESTER\Prog58t TESTER\bin\Debug\Prog58t TESTER.exe
+C:\Users\dougherty.l\Desktop\Programming 1\Prog58t TESTER\Prog58t TESTER\bin\Debug\Prog58t TESTER.dll
+C:\Users\dougherty.l\Desktop\Programming 1\Prog58t TESTER\Prog58t TESTER\bin\Debug\IronPython.dll
+C:\Users\dougherty.l\Desktop\Programming 1\Prog58t TESTER\Prog58t TESTER\bin\Debug\IronPython.Modules.dll
+C:\Users\dougherty.l\Desktop\Programming 1\Prog58t TESTER\Prog58t TESTER\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\dougherty.l\Desktop\Programming 1\Prog58t TESTER\Prog58t TESTER\bin\Debug\Microsoft.Scripting.dll
+C:\Users\dougherty.l\Desktop\Programming 1\Prog58t TESTER\Prog58t TESTER\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\dougherty.l\Desktop\Programming 1\Prog58t TESTER\Prog58t TESTER\obj\Debug\Prog58t TESTER.pyprojResolveAssemblyReference.cache
+C:\Users\dougherty.l\Desktop\Programming 1\Prog58t TESTER\Prog58t TESTER\obj\Debug\Prog58t TESTER.exe
+C:\Users\dougherty.l\Desktop\Programming 1\Prog58t TESTER\Prog58t TESTER\obj\Debug\Prog58t_TESTER.MainForm.resources
+C:\Users\dougherty.l\Desktop\Programming 1\Prog58t TESTER\Prog58t TESTER\obj\Debug\Prog58t TESTER.pyproj.GenerateResource.Cache

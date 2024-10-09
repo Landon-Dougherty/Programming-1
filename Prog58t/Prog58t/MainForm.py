@@ -126,6 +126,11 @@ class MainForm(Form):
         Paid   = float(self._textBox2.Text)
         Change = float(Paid - Total)
         QuarterChange = 0
+        ChangeAfterQuarters = 
+        DimeChange = 
+        
+        if QuarterChange ==4:
+            DimeChange = 0 
         
         if int(Change / 0.25) < 0:
             QuarterChange = int((Change / 0.25) * -1)
@@ -133,7 +138,7 @@ class MainForm(Form):
             QuarterChange = int(Change / 0.25)                                    
         
         self._label1.Text = "Total = " + str(Total) + "\nPaid = " + str(Paid) + "\nChange = " + str(Total - Paid) +\
-        "\nplaceholder = " + str(QuarterChange)
+        "\nQuartersDue = " + str(QuarterChange) + "\nDimes Due = " + str(DimeChange)
         
     def Button3Click(self, sender, e):
         Application.Exit()
