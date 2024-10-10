@@ -220,11 +220,20 @@ class MainForm(Form):
         self._label5.Text = "Change : " + str(Change)
         DollarsDue = int(Change / 1)
         Change = Change - DollarsDue
-        self._label6.Text = "Quarters Due : " + str(round(Change / 0.25,0))
-        QuartersDue = int(round(Change / 0.25,0))
+        QuartersDue = int(Change / 0.25)
+        self._label6.Text = "Quarters Due: " + str(QuartersDue)
         Change = Change - (QuartersDue * 0.25)
         DimesDue = int(Change / 0.10)
-        self._label9.Text = "Dimes Due : " + str(DimesDue)
+        self._label9.Text = "Dimes Due: " + str(DimesDue)
+        Change = Change - (DimesDue * 0.10)
+        NickelsDue = int(Change / 0.05)
+        self._label8.Text = "Nickels Due: " + str(NickelsDue)
+        Change = Change - (NickelsDue * 0.05)
+        PenniesDue = Change / 0.01
+        self._label7.Text = "Pennies Due: " + str(round(PenniesDue,0))
+
+
+
 
         
         self._label1.Text = "Total : " + str(Total)
