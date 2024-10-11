@@ -248,8 +248,14 @@ class MainForm(Form):
     def Button2Click(self, sender, e):
         self._textBox1.Text = ""
         self._textBox2.Text = ""
-        self._label1.Text   = ""
-        
+        self._label1.Text   = "Total : " 
+        self._label4.Text = "Paid : " 
+        self._label5.Text = "Change : " 
+        self._label10.Text = "Dollars Due : "
+        self._label6.Text = "Quarters Due : " 
+        self._label9.Text = "Dimes Due : "
+        self._label8.Text = "Nickels Due : " 
+        self._label7.Text = "Pennies Due : "
 
     def MainFormLoad(self, sender, e):
         pass
