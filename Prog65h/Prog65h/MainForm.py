@@ -126,6 +126,7 @@ class MainForm(Form):
         self._button2.TabIndex = 10
         self._button2.Text = "Clear"
         self._button2.UseVisualStyleBackColor = False
+        self._button2.Click += self.Button2Click
         # 
         # button3
         # 
@@ -166,8 +167,15 @@ class MainForm(Form):
         Shilling  = UndividedShil / 20 
         Undividedpence = float(self._textBox3.Text)
         Pence = float(Undividedpence / 240)
-        self._label5.Text = str(Pound + Shilling + Pence)
+        Total = float(round(Pound + Shilling + Pence,2))
+        self._label5.Text = "Modern Total : " + str(Total)
         
 
     def Button3Click(self, sender, e):
         Application.Exit()
+
+    def Button2Click(self, sender, e):
+        self._textBox1.Text = ""
+        self._textBox2.Text = ""
+        self._textBox3.Text = ""
+        self._label5.Text = "Modern Total : "
