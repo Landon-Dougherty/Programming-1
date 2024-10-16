@@ -1,5 +1,4 @@
-﻿print "Hello, World!"
-eggcount = int(input("Enter # of eggs purchased: "))
+﻿eggcount = int(input("Enter # of eggs purchased: "))
 price = 0 
 
 if eggcount >= 0 and eggcount <48:
@@ -13,4 +12,6 @@ elif eggcount >=132:
 else:
     print("Invalid Egg Count Input")
 
+eggcost = eggcount * price
+print ("Total Egg Price : $" + str(eggcost))
 input()
