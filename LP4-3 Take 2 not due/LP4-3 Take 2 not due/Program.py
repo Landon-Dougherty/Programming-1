@@ -1,10 +1,10 @@
 ﻿eggcount = int(input("Enter Egg Amount Here : "))
 dozen = eggcount // 12.0
 remain = eggcount % 12.0
-remain10 = remain * 0.10
+remain10 = remain / 12 
 totaldozen = dozen + remain10
 
-if totaldozen >= 0 and totaldozen < 4:
+if totaldozen  >= 0 and totaldozen < 4:
     price = 0.50
 elif totaldozen >= 4 and totaldozen < 6:
     price = 0.45
