@@ -85,7 +85,7 @@ class MainForm(Form):
             self._listBox1.Items.Add(line)
 
     def Button2Click(self, sender, e): #Clear 
-        pass
+        self._listBox1.Items.Clear()
 
     def Button3Click(self, sender, e): #Exit
-        pass
+        Application.Exit()
