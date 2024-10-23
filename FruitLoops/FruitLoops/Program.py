@@ -15,4 +15,5 @@ print("")
 # lastfruit = fruit[len(fruits)-1] 
 lastfruit = fruits[-1]
 print(lastfruit)
+
 input()
