@@ -79,7 +79,7 @@ class MainForm(Form):
         header = "All Multiples Of 3 Added..."
         self._listBox1.Items.Add(header)
         sum = 0 
-        for num in range (3,9669,3):
+        for num in range (3,9669+1,3):
             sum += num
            
                 
