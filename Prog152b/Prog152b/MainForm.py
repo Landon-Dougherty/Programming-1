@@ -13,6 +13,7 @@ class MainForm(Form):
         self._button2 = System.Windows.Forms.Button()
         self._button3 = System.Windows.Forms.Button()
         self._listBox1 = System.Windows.Forms.ListBox()
+        self._textBox1 = System.Windows.Forms.TextBox()
         self.SuspendLayout()
         # 
         # button1
@@ -62,10 +63,18 @@ class MainForm(Form):
         self._listBox1.Size = System.Drawing.Size(715, 429)
         self._listBox1.TabIndex = 3
         # 
+        #
+        # 
+        self._textBox1.Location = System.Drawing.Point(54, 460)
+        self._textBox1.Name = "textBox1"
+        self._textBox1.Size = System.Drawing.Size(100, 20)
+        self._textBox1.TabIndex = 4
+        # 
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.FromArgb(255, 192, 192)
         self.ClientSize = System.Drawing.Size(766, 618)
+        self.Controls.Add(self._textBox1)
         self.Controls.Add(self._listBox1)
         self.Controls.Add(self._button3)
         self.Controls.Add(self._button2)
@@ -73,19 +82,16 @@ class MainForm(Form):
         self.Name = "MainForm"
         self.Text = "Prog152a"
         self.ResumeLayout(False)
+        self.PerformLayout()
 
 
-    def Button1Click(self, sender, e): #Calc
-        header = "All Multiples Of 3 Added..."
-        self._listBox1.Items.Add(header)
-        sum = 0 
-        while sum != 15586428:
-            sum += 3 
-                
-            line = "\n\n3+6+9+12+15+18+21+24... = " + str(sum)
-        self._listBox1.Items.Add(line)
-
-        
+    def Button1Click(self, sender, e):
+        total = 0 
+        input = int(self._textBox1.Text)
+        for num in range (2,input+1,2):
+            total += num
+            rest = str(num) + "\t\t" + str(total)
+            self._listBox1.Items.Add(rest)
 
     def Button2Click(self, sender, e):#Clear
         self._listBox1.Items.Clear()
