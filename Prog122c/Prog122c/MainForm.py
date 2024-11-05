@@ -84,7 +84,7 @@ class MainForm(Form):
         for column1 in range (0,11,2):
             column2 = column1 + 1
             column3 = column1 * 2
-            column4 = column1 * 10 
+            column4 = column1 **2
             first = str(column1) + "\t" + str(column2) + "\t" + str(column3) + "\t" + str(column4)
             self._listBox1.Items.Add(first)
          

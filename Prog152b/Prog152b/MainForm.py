@@ -14,6 +14,7 @@ class MainForm(Form):
         self._button3 = System.Windows.Forms.Button()
         self._listBox1 = System.Windows.Forms.ListBox()
         self._textBox1 = System.Windows.Forms.TextBox()
+        self._label1 = System.Windows.Forms.Label()
         self.SuspendLayout()
         # 
         # button1
@@ -63,17 +64,28 @@ class MainForm(Form):
         self._listBox1.Size = System.Drawing.Size(715, 429)
         self._listBox1.TabIndex = 3
         # 
-        #
+        # textBox1
         # 
-        self._textBox1.Location = System.Drawing.Point(54, 460)
+        self._textBox1.Location = System.Drawing.Point(50, 447)
         self._textBox1.Name = "textBox1"
         self._textBox1.Size = System.Drawing.Size(100, 20)
         self._textBox1.TabIndex = 4
+        # 
+        # label1
+        # 
+        self._label1.BackColor = System.Drawing.Color.FromArgb(255, 255, 192)
+        self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 8.25, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+        self._label1.Location = System.Drawing.Point(50, 472)
+        self._label1.Name = "label1"
+        self._label1.Size = System.Drawing.Size(100, 23)
+        self._label1.TabIndex = 5
+        self._label1.Text = "Enter Common Int."
         # 
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.FromArgb(255, 192, 192)
         self.ClientSize = System.Drawing.Size(766, 618)
+        self.Controls.Add(self._label1)
         self.Controls.Add(self._textBox1)
         self.Controls.Add(self._listBox1)
         self.Controls.Add(self._button3)
