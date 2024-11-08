@@ -1,4 +1,5 @@
-﻿import System.Drawing
+﻿import time
+import System.Drawing
 import System.Windows.Forms
 
 from System.Drawing import *
@@ -315,7 +316,8 @@ class MainForm(Form):
 
 
     def MainFormLoad(self, sender, e):
-        pass
+            self._label2.Text = time.strftime("Time : %I: %M: %S: %p")
+        
 
     def Button3Click(self, sender, e): #Exit
         Applicaton.Exit() 
