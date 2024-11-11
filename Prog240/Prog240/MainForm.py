@@ -203,7 +203,18 @@ class MainForm(Form):
             comrate = 0.16
         else: 
             pass                                    
+        strcomrate = str(comrate)
+        self._label8.Text = strcomrate[2:] + "%"
+        com = (float(sale) * comrate)
+        self._label7.Text = str(com)
+        net = float(com - apay)
+        self._label6.Text = str(net)
+  
         
 
     def Button3Click(self, sender, e): #Clear
-        pass
+        self._label8.Text = ""
+        self._label7.Text = ""
+        self._label6.Text = ""
+        self._textBox1.Text = ""
+        self._textBox2.Text = ""
