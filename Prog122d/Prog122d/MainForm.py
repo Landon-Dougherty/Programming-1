@@ -96,3 +96,4 @@ class MainForm(Form):
 
     def Button3Click(self, sender, e):
         self._listBox1.Items.Clear()
+        
