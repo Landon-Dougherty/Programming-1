@@ -320,10 +320,11 @@ class MainForm(Form):
             mfee = 30.0
         if self._checkBox1.Checked:
             mfee += 10.0
-        if self._checkBox1.Checked:
-            mfee +=30.0
-        if self._checkBox1.Checked:
-            mfee +=50.0
+        if self._checkBox2.Checked:
+            mfee += 30.0
+        if self._checkBox3.Checked:
+            mfee += 50.0
+            
+            
         self._label6.Text = "Monthly Fee:   $" + str(mfee)
-        
-        
+        self._label7.Text = "Total : $" + str(int(mfee * m * 1.00))
