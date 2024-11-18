@@ -87,6 +87,7 @@ class MainForm(Form):
         self._pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         self._pictureBox4.TabIndex = 3
         self._pictureBox4.TabStop = False
+        self._pictureBox4.Visible = False
         # 
         # button1
         # 
