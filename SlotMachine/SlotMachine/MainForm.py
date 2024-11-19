@@ -248,6 +248,10 @@ class MainForm(Form):
         self._pictureBox11.TabStop = False
         self._pictureBox11.Visible = False
         # 
+        # timer1
+        # 
+        self._timer1.Tick += self.Timer1Tick
+        # 
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.Maroon
@@ -291,7 +295,7 @@ class MainForm(Form):
     def MainFormLoad(self, sender, e):
         pass
 
-    def Button2Click(self, sender, e):
+    def Button2Click(self, sender, e): #Pickpocket Button
         rnd = System.Random()
         money = rnd.Next(1, 51)
         if money > 25:
@@ -330,8 +334,78 @@ class MainForm(Form):
         elif bet > money and bet > nmoney:
             MessageBox.Show("You don't have enough money!")
         else:
-            #TODO
+            self._button1.BackgroundImage = levOn
+            self._pictureBox4.Visible = True
+            self._timer1.Enabled = True
+            self._progressBar1.Value = 0
+            self._label2.Text = str(round(nmoney,2))
+            
+            num1 = self.num1
+            num2 = self.num2
+            num3 = self.num3
+            
+            if num1 == 1 and num2 == 1 and num3 == 1:
+                nmoney += bet * 1.5 #newmoney = newmoney + bet*2
+                
+            if num1 == 2 and num2 == 2 and num3 == 2:
+                nmoney += bet * 2 #newmoney = newmoney + bet*2
+            
+            if num1 == 3 and num2 == 3 and num3 == 3:
+                nmoney += bet * 4 #newmoney = newmoney + bet*2
+                
+            if num1 == 4 and num2 == 4 and num3 == 4:
+                nmoney += bet * 8 #newmoney = newmoney + bet*2
+                
+            if num1 == 5 and num2 == 5 and num3 == 5:
+                nmoney += bet * 16 #newmoney = newmoney + bet*2
+            
+            self.num1 = 0
+            self.num2 = 0 
+            self.num3 = 0
+            self._label2.Text = str(round(nmoney,2))
+            
+            if nmoney <= 0:
+                MessageBox.Show("You ran out of cash!")
+             
             pass
+        pass #Click Lever Button
+   
+    def Timer1Tick(self, sender, e):
+        im1 = self._pictureBox5.BackgroundImage
+        im2 = self._pictureBox6.BackgroundImage
+        im3 = self._pictureBox8.BackgroundImage
+        im4 = self._pictureBox7.BackgroundImage
+        im5 = self._pictureBox9.BackgroundImage
+        levOff = self._pictureBox11.BackgroundImage
+        levOn  = self._pictureBox10.BackgroundImage
+        rnd = System.Random()
+        num1 = 0
+        num2 = 0
+        num3 = 0
+        #Copied from Button1Click
+        
+        pb1 = self._pictureBox1
+        pb2 = self._pictureBox2
+        pb3 = self._pictureBox3 
+        images = [im1, im2, im3 , im4, im5]
+        
+        for lcv in range(0,1000):
+            num1 = rnd.Next(1, 6) #Generate Number Between 1-5
+            num2 = rnd.Next(1, 6)
+            num3 = rnd.Next(1, 6)
+            
+            self.num1 = num1  
+            self.num2 = num2
+            self.num3 = num3
+            
+            pb1.BackgroundImage = images[self.num1 - 1]
+            pb2.BackgroundImage = images[self.num2 - 1]
+            pb3.BackgroundImage = images[self.num3 - 1]
+            
+            self._progressBar1.Increment(1)
+            if self._progressBar1.Value == self._progressBar1.Maximum:
+                self._timer1.Enabled = False
+                self._pictureBox4.Visible = False
+                self._button1.BackgroundImage = levOff
         
         pass
-    
