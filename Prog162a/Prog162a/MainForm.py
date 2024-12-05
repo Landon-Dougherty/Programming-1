@@ -113,3 +113,4 @@ class MainForm(Form):
     def Button2Click(self, sender, e):
         self._label1.Text = "Factorial: "
         self._textBox1.Text = ""
+        

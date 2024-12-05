@@ -81,6 +81,7 @@ class MainForm(Form):
         self._pictureBox4.BackColor = System.Drawing.Color.White
         self._pictureBox4.BackgroundImage = resources.GetObject("pictureBox4.BackgroundImage")
         self._pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        self._pictureBox4.Image = resources.GetObject("pictureBox4.Image")
         self._pictureBox4.Location = System.Drawing.Point(25, 232)
         self._pictureBox4.Name = "pictureBox4"
         self._pictureBox4.Size = System.Drawing.Size(488, 306)

@@ -216,7 +216,7 @@ class MainForm(Form):
         # 
         self._label11.BackColor = System.Drawing.Color.FromArgb(255, 192, 255)
         self._label11.Font = System.Drawing.Font("Microsoft Sans Serif", 12.5, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label11.Location = System.Drawing.Point(67, 485)
+        self._label11.Location = System.Drawing.Point(67, 494)
         self._label11.Name = "label11"
         self._label11.Size = System.Drawing.Size(269, 23)
         self._label11.TabIndex = 19
@@ -316,7 +316,7 @@ class MainForm(Form):
 
 
     def MainFormLoad(self, sender, e):
-            self._label2.Text = time.strftime("Time : %I: %M: %S: %p")
+        self._label2.Text = time.strftime("Time : %I: %M: %S: %p")
         
 
     def Button3Click(self, sender, e): #Exit
