@@ -160,7 +160,7 @@ class MainForm(Form):
     def Button1Click(self, sender, e): #Calc
         classa = float(self._textBox1.Text)
         if self._textBox1.Text == "":
-            classa = 0
+            classa = 0 
         classb = float(self._textBox2.Text)
         classc = float(self._textBox3.Text)
         self._label5.Text = str((classa*15) + (classb*12) + (classc*9))

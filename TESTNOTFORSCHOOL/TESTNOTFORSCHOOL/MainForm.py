@@ -1,6 +1,7 @@
 ﻿import System.Drawing
 import System.Windows.Forms
 from math import sqrt
+import math
 from System.Drawing import *
 from System.Windows.Forms import *
 
